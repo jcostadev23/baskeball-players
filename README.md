@@ -1,46 +1,82 @@
-# Getting Started with Create React App
+# 📘 Aplicação com uma Chamada API e faz Display de Nomes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 Descrição
+Esta é uma aplicação simples que realiza uma chamada a uma API e exibe os nomes retornados. O projeto utiliza o **Storybook** para desenvolver e documentar os componentes da interface.
 
-## Available Scripts
+## 🚀 Tecnologias Utilizadas
+- **React** para a interface do usuário
+- **TypeScript** para tipagem estática 
+- **Async Fetch Functions** para chamadas à API
+- **Storybook** para documentação dos componentes
 
-In the project directory, you can run:
+## 📂 Estrutura do Projeto
+```
+📦 projeto
+├── 📂 src
+│   ├── 📂 components
+│       ├── 📂 Button
+│            ├── 📜 button.css
+│            ├── 📜 index.tsx
+│       ├── 📂 PlayerCard
+│            ├── 📜 index.tsx
+│   ├── 📜 App.tsx
+├── 📂 .storybook
+│   ├── 📜 main.js
+│   ├── 📜 preview.js
+├── 📜 package.json
+├── 📜 README.md
+```
 
-### `npm start`
+## 📡 Instalação e Execução
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 🔧 Requisitos
+- **Node.js** instalado
+- **Gerenciador de pacotes** (npm ou yarn)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 📥 Passos para rodar o projeto
+```bash
+# Clone o repositório
+git clone https://github.com/
+cd basketball-players
 
-### `npm test`
+# Instale as dependências
+npm install  # ou yarn install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Execute a aplicação
+npm start  # ou yarn start
 
-### `npm run build`
+# Execute o Storybook
+npm run storybook  # ou yarn storybook
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🔗 Endpoints da API
+A aplicação consome uma API que retorna uma lista de nomes no seguinte formato:
+```json
+[
+  { "id": 1, "nome": "João" },
+  { "id": 2, "nome": "Maria" },
+  { "id": 3, "nome": "Carlos" }
+]
+```
+A chamada da API está implementada no arquivo `api.js` utilizando `axios`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🎨 Componentes
+Os componentes são documentados no Storybook e incluem:
+- **NomeList**: Lista de nomes
+- **NomeItem**: Item individual da lista
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Desenvolvimento e Contribuição
+Caso queira contribuir:
+1. Faça um fork do repositório
+2. Crie uma nova branch (`git checkout -b minha-feature`)
+3. Faça suas alterações e commits (`git commit -m 'Minha nova feature'`)
+4. Envie para o repositório remoto (`git push origin minha-feature`)
+5. Crie um Pull Request
 
-### `npm run eject`
+## 📄 Licença
+Este projeto está licenciado sob a **MIT License**.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
+Desenvolvido por **[Jcostadev23]** 🚀
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
