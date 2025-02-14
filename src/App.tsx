@@ -1,6 +1,5 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import "./App.css";
-import { StoredByTeams } from "./types";
 import { Button } from "./components/Button";
 
 type Team = {
@@ -20,7 +19,7 @@ type Player = {
   team: Team;
 };
 
-const callback = async () => {
+const callback = () => {
   const url = `https://api.balldontlie.io/v1/players?per_page=${20}&cursor=${2}`;
   const headersAuthorization = {
     method: "GET",
@@ -30,7 +29,7 @@ const callback = async () => {
     },
   };
 
-  const response = await fetch(url, headersAuthorization)
+  const response = fetch(url, headersAuthorization)
     .then((resp) => resp.json())
     .then((data) => data.data);
 
