@@ -1,0 +1,29 @@
+.button {
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  border-radius: 6px;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 20px;
+}
+.button--primary {
+  background-color: #1ea7fd;
+  color: white;
+}
+.button--secondary {
+  background-color: transparent;
+  color: #333;
+}
+.button--sm {
+  padding: 10px 16px;
+  font-size: 12px;
+}
+.button--md {
+  padding: 11px 20px;
+  font-size: 14px;
+}
+.button--lg {
+  padding: 12px 24px;
+  font-size: 16px;
+}
