@@ -17,7 +17,7 @@ Esta é uma aplicação simples que realiza uma chamada a uma API e exibe os nom
 │       ├── 📂 Button
 │            ├── 📜 button.css
 │            ├── 📜 index.tsx
-│       ├── 📂 PlayerCard
+│       ├── 📂 PlayCard
 │            ├── 📜 index.tsx
 │   ├── 📜 App.tsx
 ├── 📂 .storybook
@@ -36,7 +36,7 @@ Esta é uma aplicação simples que realiza uma chamada a uma API e exibe os nom
 ### 📥 Passos para rodar o projeto
 ```bash
 # Clone o repositório
-git clone https://github.com/
+git clone https://github.com/jcostadev23/baskeball-players
 cd basketball-players
 
 # Instale as dependências
@@ -53,17 +53,16 @@ npm run storybook  # ou yarn storybook
 A aplicação consome uma API que retorna uma lista de nomes no seguinte formato:
 ```json
 [
-  { "id": 1, "nome": "João" },
-  { "id": 2, "nome": "Maria" },
-  { "id": 3, "nome": "Carlos" }
+  { "id": 1, "first_name": "João", last_name: "Fernandes", jersey_number:3, team:"HFC" },
+  { "id": 2, "first_name": "Ana", last_name: "Pita", jersey_number:6, team:"Redbulls" },
+  { "id": 3, "first_name": "Lilia", last_name: "Dionisio", jersey_number:5, team:"Tigers" }
 ]
 ```
-A chamada da API está implementada no arquivo `api.js` utilizando `axios`.
 
 ## 🎨 Componentes
 Os componentes são documentados no Storybook e incluem:
-- **NomeList**: Lista de nomes
-- **NomeItem**: Item individual da lista
+- **Button**: Botão
+- **PlayCard**: Um cartão para cada jogador da lista
 
 ## 🛠️ Desenvolvimento e Contribuição
 Caso queira contribuir:
@@ -72,9 +71,6 @@ Caso queira contribuir:
 3. Faça suas alterações e commits (`git commit -m 'Minha nova feature'`)
 4. Envie para o repositório remoto (`git push origin minha-feature`)
 5. Crie um Pull Request
-
-## 📄 Licença
-Este projeto está licenciado sob a **MIT License**.
 
 ---
 Desenvolvido por **[Jcostadev23]** 🚀
